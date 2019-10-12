@@ -2,8 +2,9 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Roboto Slab", serif;
+  font-family: "Libre Baskerville", serif;
   color: #333333;
+  letter-spacing: -.02em;
 }
 
 h1,
@@ -11,9 +12,12 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: "Ultra", serif;
+}
+
 time {
-  font-family: "Ruda", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 #container {
@@ -28,6 +32,12 @@ time {
 #container > * {
   width: 700px;
   margin: 0 auto;
+}
+
+header h1, footer {
+  display: block;
+  justify-content: center;
+  text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -51,7 +61,7 @@ time {
 
 #container header ul {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   float: right;
@@ -73,7 +83,7 @@ time {
 #container nav {
   border-bottom: solid 3px #cecece;
   padding-bottom: 0.5em;
-  font-family: "Ruda", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 #container nav ul {
@@ -95,7 +105,7 @@ time {
 #container main {
   flex: 1 0 0;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
 }
 
 #container main section#home ul {
@@ -194,7 +204,7 @@ time {
 
 .meta-aside, #container main section#home ul li aside, #container main article aside {
   margin: 0.5em 0;
-  font-family: "Ruda", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   color: #909090;
   font-size: 0.8em;
 }
@@ -211,8 +221,12 @@ time {
 }
 
 a {
-  color: #666666;
+  color: #0b1164;
   text-decoration: none;
+}
+
+a:visited {
+  color: #010a8b;
 }
 
 .image, figure img, img {
@@ -334,7 +348,7 @@ table thead {
 blockquote {
   margin: 1em;
   border-left: solid 0.1em #cecece;
-  padding: 0.5em 2em;
+  padding: 0.5em 3.1em;
   position: relative;
   background-color: #efefef;
   box-shadow: 0 -1px 0 #bbbbbb inset;
@@ -344,7 +358,7 @@ blockquote::before {
   content: "\f10d";
   font-size: 3em;
   font-family: "FontAwesome";
-  color: rgba(192, 192, 192, 0.3);
+  color: rgba(16, 57, 104, 0.068);
   position: absolute;
   left: 6px;
   top: 0;
