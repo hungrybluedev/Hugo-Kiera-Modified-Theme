@@ -7,6 +7,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/{{ .Site.Params.favicon }}"/>
   {{ partial "meta" . }}
   {{ partial "header_includes" . -}}
+  {{ partial "math.html" . }}
 
   </head>
 
@@ -44,6 +45,9 @@
                     aria-hidden="true"></i></a></li>
               {{ end }} {{ if .Site.Author.reddit }}
               <li><a href="https://reddit.com/u/{{ .Site.Author.reddit }}"><i class="fab fa-reddit fa-lg"
+                  aria-hidden="true"></i></a></li>
+              {{ end }} {{ if .Site.Author.patreon }}
+              <li><a href="https://patreon.com/{{ .Site.Author.patreon }}"><i class="fab fa-patreon fa-lg"
                   aria-hidden="true"></i></a></li>
               {{ end }}
             </ul>
